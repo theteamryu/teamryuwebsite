@@ -1,0 +1,144 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background for contrast */
+    color: #f4f4f4; /* Light text color for readability */
+    line-height: 1.6;
+}
+
+/* Container for layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background: #000; /* Black background for header */
+    color: #fff; /* White text for contrast */
+    padding: 1.5em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff0000; /* Red color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6666; /* Light red on hover */
+}
+
+/* Section styles */
+section {
+    padding: 3em 0;
+    background: #1f1f1f; /* Slightly lighter dark background */
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #ff0000; /* Red color for headings */
+}
+
+section p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Team member styles */
+.member {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px solid #444; /* Darker border for separation */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+    background-color: #333; /* Darker background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.member img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 1em;
+    transition: transform 0.3s ease;
+}
+
+.member img:hover {
+    transform: scale(1.1);
+}
+
+.member-info h3 {
+    font-size: 1.4em;
+    color: #ff0000; /* Red color for member names */
+    margin-bottom: 0.5em;
+}
+
+.member-info p {
+    font-size: 1em;
+}
+
+/* Contact section styles */
+#contact {
+    background: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 2em 0;
+    text-align: center;
+}
+
+#contact a {
+    color: #ff6666; /* Light red color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #ff0000; /* Darker red on hover */
+}
+
+/* Footer styles */
+footer {
+    background: #000; /* Black background for footer */
+    color: #fff; /* White text */
+    padding: 1em 0;
+    text-align: center;
+}
